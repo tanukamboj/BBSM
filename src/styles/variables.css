@@ -1,0 +1,32 @@
+:root {
+  /* Brand palette — devotional maroon & saffron-gold on warm ivory */
+  --maroon-900: #3b0a10;
+  --maroon-800: #4f0e17;
+  --maroon-700: #6b1420;
+  --maroon-600: #8a1c2b;
+  --saffron: #e47a1c;
+  --gold: #d4a24c;
+  --gold-soft: #f3e3c3;
+  --cream: #fbf6ee;
+  --cream-2: #f6eddf;
+  --white: #ffffff;
+  --ink: #2a1d18;
+  --ink-2: #5c4b42;
+  --muted: #8a7a70;
+  --line: #eadfce;
+  --success: #2f7d4f;
+
+  --font-body: 'Inter', 'Noto Sans Devanagari', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-head: 'Playfair Display', 'Noto Serif Devanagari', Georgia, serif;
+  --font-hi: 'Noto Serif Devanagari', 'Playfair Display', serif;
+
+  --radius-sm: 8px;
+  --radius: 14px;
+  --radius-lg: 22px;
+  --shadow-sm: 0 1px 2px rgba(59, 10, 16, 0.06), 0 2px 8px rgba(59, 10, 16, 0.05);
+  --shadow: 0 6px 24px rgba(59, 10, 16, 0.08);
+  --shadow-lg: 0 18px 50px rgba(59, 10, 16, 0.16);
+
+  --container: 1200px;
+  --header-h: 84px;
+}
