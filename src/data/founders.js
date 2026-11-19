@@ -1,6 +1,65 @@
 // Founders & Guides
 export const founders = [
   {
+    slug: 'guru-nanak-dev-ji-first-sikh-guru',
+    name: 'Guru Nanak Dev Ji',
+    pageTitle: 'Sri Guru Nanak Dev Ji',
+    role: ['Founder of Sikhism,', 'First Sikh Guru'],
+    image: '/images/GuruNanakDevJi.jpg',
+    facts: [
+      { label: 'Born', value: '1469, Rai Bhoi di Talwandi (Nankana Sahib)' },
+      { label: 'Parents', value: 'Mehta Kalu Ji & Mata Tripta Ji' },
+      { label: 'Joti Jot', value: 'September 1539, Kartarpur' },
+    ],
+    sections: [
+      {
+        heading: 'Introduction',
+        paragraphs: [
+          'Sri Guru Nanak Dev Ji (1469 to 1539) was the founder of Sikhism and the first of the ten Sikh Gurus. He was born in 1469 at Rai Bhoi di Talwandi, now known as Nankana Sahib, near Lahore in present-day Pakistan. His birth anniversary, Gurpurab, is celebrated with great devotion every year on Kartik Puranmashi (the full-moon day of the month of Kartik).',
+          'His father, Mehta Kalu Ji, was the village accountant (patwari) and his mother was Mata Tripta Ji. His elder sister, Bebe Nanaki Ji, was the first to recognise the divine light in him and remained his lifelong devotee.',
+        ],
+      },
+      {
+        heading: 'Early Life',
+        paragraphs: [
+          'From childhood, Nanak showed a deeply spiritual and thoughtful nature. When he was sent to the village teacher, he amazed him by explaining the deeper meaning of the alphabet in terms of the One God. At the age of about eleven, when the sacred thread (janeu) ceremony was arranged, he refused to wear it, saying that he wanted a thread made of compassion, contentment, continence and truth, which neither breaks, gets soiled, burns nor is lost.',
+          'His father once gave him twenty rupees to start a business and make a "true bargain" (Sacha Sauda). On the way, Nanak met a group of hungry sadhus and spent all the money on feeding them, saying that there could be no truer bargain than this. Gurdwara Sacha Sauda stands at that place today.',
+          'He was married to Mata Sulakhani Ji, daughter of Mool Chand of Batala, and they were blessed with two sons, Baba Sri Chand Ji (1494) and Baba Lakhmi Das Ji (1496). Baba Sri Chand Ji later founded the Udasin order, from whose tradition Baba Bhuman Shah Ji came.',
+        ],
+      },
+      {
+        heading: 'Enlightenment at Sultanpur Lodhi',
+        paragraphs: [
+          'Bebe Nanaki Ji and her husband Jai Ram arranged for Nanak to work as the storekeeper (modi) of Nawab Daulat Khan Lodi at Sultanpur Lodhi. It is said that while weighing grain he would count "ten, eleven, twelve, thirteen" and on reaching "terah" (which also means "Yours") he would keep repeating "Tera, Tera" (all is Yours, O Lord), lost in devotion.',
+          'One morning, around 1499, he went to bathe in the Kali Bein rivulet and did not return for three days. When he reappeared, he was filled with divine light and his first words were: "Na koi Hindu, na koi Musalman" (There is no Hindu and no Muslim) — meaning that all human beings are equal children of the One God. He then uttered the Mool Mantar, the opening verse of the Guru Granth Sahib: "Ik Onkar, Satnam, Karta Purakh, Nirbhau, Nirvair, Akal Murat, Ajuni, Saibhang, Gur Prasad".',
+        ],
+      },
+      {
+        heading: 'The Four Udasis (Spiritual Journeys)',
+        paragraphs: [
+          'For more than twenty years, Guru Nanak Dev Ji travelled on foot across India and beyond in four great journeys known as Udasis, accompanied by his companions Bhai Mardana Ji, a Muslim rabab player, and Bhai Bala Ji. Wherever he went, Bhai Mardana played the rabab and Guru Ji sang the divine Bani.',
+          'In the East he visited Haridwar, Banaras, Gaya, Jagannath Puri and Assam; in the South he reached Sri Lanka; in the North he went to the Himalayas, Kailash and Tibet, where he held discourses with the Siddhas; and in the West he travelled as far as Mecca, Medina and Baghdad. At Haridwar, seeing people throwing water towards the sun for their ancestors, he began throwing water towards the west, explaining that if their water could reach the dead, his could surely reach his fields in Punjab. At Mecca, when told not to sleep with his feet towards the Kaaba, he gently asked to have his feet turned in the direction where God was not — teaching that God is everywhere.',
+          'At Eminabad he chose to eat the simple bread of Bhai Lalo, an honest carpenter, over the rich feast of Malik Bhago, showing that bread earned by honest labour is pure. He also witnessed the invasion of Babur and raised his voice against injustice and cruelty in the verses known as Babar Vani.',
+        ],
+      },
+      {
+        heading: 'Kartarpur and the Three Golden Principles',
+        paragraphs: [
+          'After his travels, Guru Nanak Dev Ji settled at Kartarpur on the banks of the River Ravi, a town he had founded. There he lived as a householder and worked in the fields, setting up a community in which everyone — regardless of caste, creed or gender — sat together in sangat for kirtan and ate together in langar.',
+          'His teachings rest on three golden principles: Naam Japo — always remember God; Kirat Karo — earn an honest living; and Vand Chhako — share with others what you have. He rejected empty rituals, idol worship, the caste system and discrimination against women, saying, "So kyon manda akhiye, jit jamme rajan" (Why call her inferior, who gives birth to kings?).',
+          'His Bani, including the Japji Sahib, Asa di Var and Sidh Gosht, comprises 974 hymns in 19 ragas that are enshrined in the Sri Guru Granth Sahib.',
+        ],
+      },
+      {
+        heading: 'Successor and Joti Jot',
+        paragraphs: [
+          'Guru Nanak Dev Ji tested his followers and found the greatest devotion in Bhai Lehna Ji. He named him Angad ("part of my own body") and installed him as the second Guru, Guru Angad Dev Ji, passing over his own sons. Baba Sri Chand Ji accepted this with humility and continued spreading his father\'s message through the Udasi order.',
+          'Guru Nanak Dev Ji merged with the Divine Light (Joti Jot) at Kartarpur in September 1539. It is said that both Hindus and Muslims wished to perform his last rites according to their own customs, but when the sheet was lifted, only flowers were found, which both communities shared. Gurdwara Darbar Sahib Kartarpur stands at that place today. His message of One God, equality, truth and service continues to guide millions, including the sangat of Dera Baba Bhuman Shah Ji.',
+        ],
+      },
+    ],
+  },
+  {
     slug: 'bhagwan-sri-chand-ji-maharaj-founder-of-udasin-sect-in-sikhism',
     name: 'Baba Sri Chand Ji',
     pageTitle: 'Baba Sri Chand Ji',
@@ -103,45 +162,6 @@ export const founders = [
         heading: 'Post-Partition Scenario',
         paragraphs: [
           "After partition, due to compulsions of politics, Mahant Girdhari Dass, the Mukh Sewadar of the Dera, shifted his religious headquarters from Pakistan to India. A new Shrine and Dera was established in Sangar Sadan in Sirsa District in Haryana. The total land transferred to the Dera from Pakistan was a meagre 1600 acres (6.5 km²) compared to over 18000 acres (73 km²) in Montgomery. After Mahant Girdhari Dass's death, Baba Mahant Amar Nath Bawa was the mahant of the shrine in Sangar Sadan. At present Baba Braham Dass is the mahant (Gaddinasheen). Mahant Baba Braham Dass Ji is the 12th Mahant of Dera Baba Bhuman Shah Ji Sangar Sarista (Sirsa). Besides Sangar Sadan, the Hindu devotees of the Baba have also built several temples in his memory in a number of states of northern India as well, where daily worship unto Babaji is offered with faith and love (Baba Bhuman Shah by Sant Chandra Swami). In Pakistan, this Dera was considered the richest with huge property attached to it in pre-partition times. The spiritual and pragmatic teachings of Baba Bhuman Shah have been presented in the form of aphorisms in a booklet by his ardent devotee, Sage Chandra Swami, with a focus on true goal of life as well as the right means for its achievement. These teachings are in complete concordance with Baba's own divine life.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: 'baba-brahm-dass-ji-dera-baba-bhuman-shah',
-    name: 'Baba Brahm Dass Ji',
-    pageTitle: 'Baba Brahm Dass Ji',
-    role: ['Gaddinshin Mahant,', 'Mukhya Dera Baba Bhuman Shah Ji'],
-    image: '/images/BabaBrahmDassJi.jpg',
-    facts: [
-      { label: 'Born', value: '25th October 1977, Akkanwali (Fatehabad)' },
-      { label: 'Parents', value: 'Bhajan Lal & Mathra Devi' },
-      { label: 'Gaddi', value: '12th Mahant since 2003' },
-    ],
-    sections: [
-      {
-        heading: 'Introduction to the life of Mahant Baba Brahm Dass Ji',
-        subheading: '*12th Mahant of Dera Baba Bhuman Shah Ji Sangar Sarista (Sirsa)',
-        paragraphs: [
-          'After the death of Mahant Amar Dass the llth successor on 01.01.03, Baba Brahm Dass Ji was coronated on the Gaddi (successorship) as per the will and desire of Mahant Amar Dass and all the followers of Dera and was declared the 12th Mahant of Dera Baba Bhuman Shah Ji Sangar Sarista (Sirsa) Haryana.A brief life sketch of Mahant Brahm Dass Ji is presented here in the service of followers.',
-          'Param Pujya Baba Brahm Dass Ji took birth on 25th October 1977 at village Akkanwali, Tehsil & Distt. Fatehabad (Haryana) in the house of father Bhajan Lal and mother Mathra Devi. All the family of Guru Maharaj Baba Brahm Dass is fully devoted to Baba Bhuman Shah Ji.',
-          'Since childhood, Baba Brahm Dass ji has been praying God, and has a saintly nature. He likes the company of Saints. Due to the love of God he lives all alone. In childhood, his health did not remain well but whenever he came to the Dera Baba Bhuman Shah, his health improved automatically. But when ever he returned home he fell ill again. At that time, Sant Baba Heera Nand used to serve the Dera. Sant Baba Heera Nand told the parents of Baba Brahm Dass Ji that they should allow him to remain as a celibate (Sadhu) at the Dera Baba Bhuman Shah Sangar Sarista.',
-          'Baba Heera Nand was a true servant of Baba Bhuman Shah Ji and also an Antaryami and Ridh-Sidh Sant (A Saint who knows every thing). He estimated by his inner knowledge that Child Baldev (later renamed as Baba Brahm Dass Ji) was not a simple child but was a Divine Excellence. The father of Baldev Raj accepted his opinion and Child Baldev was put in the service of the Dera as a hermit. Under the protection and guidance of Baba Hira Nand Ji the Child Baldev started serving in the Dera along his study.',
-          'Early in the morning, he used to go for meditation, prepared and serve the food, cleaned the Dera. He felt grateful himself in serving the followers and doing the other activities of the Dera. All the followers were very happy with his services. His polite nature always influenced the visitors, followers and Mahant Amar Dass Ji. He got Mantra Diksha (Spiritual Word) from Mahant Amar Dass Ji on the festival of Teharva in 1991.',
-          'After Mahant Amar Dass left this mortal world on 1st January 2003,Gaddi (the successorship) of Dera became vacant and according to the Tradition of Dera and Will of Mahant Amar Dass, a General Meeting of Followers and Devotees was called; in which Hermits, Saints, Head of Maths (Monasteries), and Heads of Religious Institutions assembled at Dera Baba Bhuman Shah Sangar Sarista (Sirsa). All of them accepted the coronation of Baba Baldev Raj as the Mahant of Dera Bhuman Shah, Sangar Sarista (Sirsa) and according to the Tradition, Baba Baldev Raj was renamed as Mahant Baba Brahm Dass Ji. In the Coronation- Ceremony, Baba Saran Dass completed the Dera\'s traditional rituals by smearing his forehead with sandal, pouring holy water.Baba Jiwan Dass ji and other saints completed the traditional rituals by putting Sehaly (holy thread)and Topi (Turban) in the presence of all the Saints and Followers.',
-          'Since that day, he is adorning the Gaddi of the Dera. Due to the Divine Power of Guru Gaddi, followers and people are coming from all over India and are given Mantra Diksha (Spiritual Words).Baba Brahm Dass ji is salving them out of the lust of this materialistic world and guiding them in realizing God.',
-          'After his elevation to the Gaddi of the Dera, Baba Brahm Dass Ji in his Maiden Speech, preached the followers that by following the path shown by Baba Bhuman Shah Ji, he would spend his whole life serving the Humanity. He further said that it would be his preference that every Visitor and Follower of Baba Bhuman Shah Ji would receive full respect and affection in the Dera.',
-          'When he adorned the Gaddi,the Dera was facing many critical problems but by the Blessings and Grace of Baba Bhuman Shah Ji he overcame all the problems and obstacles. He accepted all the challenges positively in spite of his young age. He led the followers in this struggle. He saved Respect, Property and Land of Dera. With the Grace of Baba Bhuman Shah Ji, he spread out the Teachings of Dera in different states as Haryana, Punjab, U.P.,Rajasthan etc.',
-          'Along this his name and fame have started spreading out in India and abroad. Now he is salving millions of people by doing Satsangs and spreading the Teachings of Baba Bhuman Shah Ji. His words prove beneficial for the people who are coming from far and near for his Darshana.',
-          'With the Divine Power, Grace and Blessings of Baba Bhuman Shah Ji all the wishes of followers are being fulfilled. After the Coronation of Baba Brahm Dass Ji constructive works of the Main Gate, Dharamshala, Cow Shed, Dispensary, Satsang Hall, Langar Bhawan have been completed. For the improvement of Agricultural Land of the Dera, new Tubewells and Underground-Pipelines have been completed and extended. Agricultural Equipments, Tractors and other Machines are purchased. Baba Bhuman Shah Sr. Sec. School is being constructed for poor, needy and intelligent children. Along this, the beautification of Dera is also going on.',
-          "Baba Brahm Dass Ji restored Dera Baba Bhuman Shah at village Bhuman Shah, Distt. Mintgumri (Pakistan). He visited Pakistan thrice and the renovation of Dera in Pakistan is being done by Pakistan Govt. All this happened due to continuous and endless efforts of Baba Brahm Dass Ji. In future, a group of 500 Devotees of Baba Bhuman Shah Ji will visit Pakistan's Dera and other Religious Places every year. This is under process and there would be A Mela (fair) every year in Dera Baba Bhuman Shah (Pakistan). With the Blessings of Baba Brahm Dass Ji, Marriages of Poor and Needy girls are arranged in the Dera from time to time. Baba Brahm Dass Ji is serving the Dera with his utmost efforts and capacity. It is the request of the Followers to Baba Bhuman Shah Ji and God, “Your Grace, Love and Affection should always continue on the followers. May Baba Brahm Dass Ji live a life serving Humanity! May he shower Blessings, Affection and Grace to the followers for their welfare by following the path, shown by Baba Bhuman Shah Ji. May God Bless Baba Brahm Dass Ji !",
-        ],
-      },
-      {
-        heading: 'Preaching of Baba Brahm Dass Ji to his followers :',
-        paragraphs: [
-          "Guru Maharaj Baba Brahm Dass Ji has accepted human life as the Best life in the Universe. He says that God has formed man and man has formed religion to keep alive the Preaching of Saints and Holy men. Baba Ji wishes to spend his life in Remembrance of God and serving Humanity and praying Baba Bhuman Shah Ji to keep him near His Holy Feet and inspire him to serve the society. In this way, Guru Maharaj Ji gives all the Credit to Baba Bhuman Shah Ji's Divine Power and Devotion. Guru Maharaj considers the Dera his heart and Devotees his body.",
-          "Guru Maharaj Baba Brahm Dass ji says that he is only a particle of the Dust of Baba Bhuman Dass Ji's Holy Feet and prays morn till night that God should always keep him near His Feet and he may spend his whole life serving the Humanity.",
         ],
       },
     ],

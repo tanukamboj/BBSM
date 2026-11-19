@@ -42,6 +42,7 @@ export default function App() {
         <Route path="baba-bhuman-shah-charitable-trust-sangar-sadhan" element={<Navigate to={TRUST} replace />} />
         <Route path="teachings-of-baba-bhuman-shah-ji" element={<Navigate to={TEACHINGS} replace />} />
         <Route path="media" element={<Navigate to="/gallery" replace />} />
+        <Route path="baba-brahm-dass-ji-dera-baba-bhuman-shah" element={<Navigate to={TRUST} replace />} />
         {['aarti-bal-yati-baba-bhuman-shah-ji-udaseen', 'aarti-bhagwan-sri-chand-maharaj-ji', 'prayer-by-baba-bhuman-shah-jis-followers', 'festivals-of-dera-baba-bhuman-shah-ji'].map((old) => (
           <Route key={old} path={old} element={<Navigate to="/blog" replace />} />
         ))}
