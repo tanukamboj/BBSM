@@ -236,3 +236,10 @@ a:hover .link-arrow .icon,
   font-weight: 700;
   letter-spacing: 0.04em;
 }
+
+/* Letter-spacing splits Gurmukhi and Devanagari letters from their vowel signs,
+   so it is switched off when the page is in Punjabi or Hindi. */
+html:lang(pa) *,
+html:lang(hi) * {
+  letter-spacing: normal !important;
+}

@@ -1,18 +1,19 @@
-import { trustIntro, trustObjectives } from '../data/trust';
-import { site } from '../data/site';
+import { useLang } from '../i18n/LanguageContext';
+import { useContent } from '../i18n/content';
 import useTitle from '../hooks/useTitle';
 import PageHero from '../components/common/PageHero';
 import SectionTitle from '../components/common/SectionTitle';
 import ContactForm from '../components/common/ContactForm';
 import Icon from '../components/common/Icon';
 
-const title = 'Baba Bhuman Shah Charitable Trust, Sangar Sadhan';
-
 export default function AboutTrust() {
-  useTitle('About Trust');
+  const { t } = useLang();
+  const { trustIntro, trustObjectives, site } = useContent();
+  const title = t('trustPageTitle');
+  useTitle(t('aboutTrust'));
   return (
     <>
-      <PageHero title={title} subtitle="Welfare Trust" crumbs={[{ label: 'About', to: '/about' }, { label: title }]} />
+      <PageHero title={title} subtitle={t('welfareTrust')} crumbs={[{ label: t('about'), to: '/about' }, { label: title }]} />
 
       <section className="section">
         <div className="container trust-intro">
@@ -20,13 +21,13 @@ export default function AboutTrust() {
             <img src="/images/Baba-Brahm-Dass-Ji-Trust.jpg" alt="Baba Brahm Dass Ji" width="486" height="700" />
           </div>
           <div className="prose">
-            <span className="eyebrow">WELFARE TRUST</span>
-            <h2>Welcome to Baba Bhuman Shah Charitable Trust</h2>
+            <span className="eyebrow">{t('welfareTrust')}</span>
+            <h2>{t('trustWelcome')}</h2>
             <p>{trustIntro}</p>
             <div className="trust-badges">
-              <div><Icon name="calendar" /> <span><small>Established</small>{site.established}</span></div>
-              <div><Icon name="shield" /> <span><small>Registration</small>No. 7-B, 30-9-75</span></div>
-              <div><Icon name="users" /> <span><small>Founded by</small>Mahant Girdhari Dass Ji</span></div>
+              <div><Icon name="calendar" /> <span><small>{t('established')}</small>{site.established}</span></div>
+              <div><Icon name="shield" /> <span><small>{t('registration')}</small>{t('registrationValue')}</span></div>
+              <div><Icon name="users" /> <span><small>{t('foundedBy')}</small>{t('founderName')}</span></div>
             </div>
           </div>
         </div>
@@ -34,7 +35,7 @@ export default function AboutTrust() {
 
       <section className="section section--cream">
         <div className="container">
-          <SectionTitle eyebrow="Objectives" title="Aims of the Trust" />
+          <SectionTitle eyebrow={t('objectives')} title={t('aimsOfTrust')} />
           <div className="feature-grid">
             {trustObjectives.map((o) => (
               <div className="feature feature--numbered" key={o.no}>
@@ -50,7 +51,7 @@ export default function AboutTrust() {
 
       <section className="section">
         <div className="container narrow">
-          <SectionTitle eyebrow="Get in touch" title="Contact Us" />
+          <SectionTitle eyebrow={t('getInTouch')} title={t('contactUs')} />
           <ContactForm />
         </div>
       </section>

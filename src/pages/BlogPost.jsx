@@ -1,12 +1,15 @@
 import { Link, Navigate } from 'react-router-dom';
-import { getPost, posts } from '../data/blog';
+import { useLang } from '../i18n/LanguageContext';
+import { useContent } from '../i18n/content';
 import useTitle from '../hooks/useTitle';
 import PageHero from '../components/common/PageHero';
 import ShareButtons from '../components/common/ShareButtons';
 import Icon from '../components/common/Icon';
 
 export default function BlogPost({ slug }) {
-  const post = getPost(slug);
+  const { t } = useLang();
+  const { posts } = useContent();
+  const post = posts.find((p) => p.slug === slug);
   useTitle(post?.title);
   if (!post) return <Navigate to="/blog" replace />;
 
@@ -17,7 +20,7 @@ export default function BlogPost({ slug }) {
 
   return (
     <>
-      <PageHero title={post.title} crumbs={[{ label: 'Blog', to: '/blog' }, { label: post.title }]} />
+      <PageHero title={post.title} crumbs={[{ label: t('blog'), to: '/blog' }, { label: post.title }]} />
       <section className="section">
         <div className="container layout-sidebar">
           <article className="post card">
@@ -44,17 +47,17 @@ export default function BlogPost({ slug }) {
 
             <nav className="post__nav" aria-label="More posts">
               {prev ? (
-                <Link to={`/${prev.slug}`}><small>Previous</small>{prev.title}</Link>
+                <Link to={`/${prev.slug}`}><small>{t('previous')}</small>{prev.title}</Link>
               ) : <span />}
               {next && (
-                <Link to={`/${next.slug}`} className="post__nav-next"><small>Next</small>{next.title}</Link>
+                <Link to={`/${next.slug}`} className="post__nav-next"><small>{t('next')}</small>{next.title}</Link>
               )}
             </nav>
           </article>
 
           <aside className="info-panel">
             <div className="card">
-              <h3 className="card__title">You Might Be Interested in..</h3>
+              <h3 className="card__title">{t('interested')}</h3>
               <ul className="recent-list">
                 {others.map((p) => (
                   <li key={p.slug}>

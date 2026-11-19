@@ -1,6 +1,8 @@
 import { site } from '../../data/site';
+import { useLang } from '../../i18n/LanguageContext';
 
 export default function MapEmbed({ height = 320 }) {
+  const { t } = useLang();
   const q = encodeURIComponent(site.mapQuery);
   return (
     <div className="map-embed">
@@ -13,7 +15,7 @@ export default function MapEmbed({ height = 320 }) {
         referrerPolicy="no-referrer-when-downgrade"
       />
       <a className="map-embed__link" href={`https://www.google.com/maps/search/?api=1&query=${q}`} target="_blank" rel="noopener noreferrer">
-        Open in Google Maps →
+        {t('openMaps')}
       </a>
     </div>
   );

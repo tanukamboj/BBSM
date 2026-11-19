@@ -1,14 +1,24 @@
 import { useEffect, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
-import { navLinks, site } from '../../data/site';
+import { useLang } from '../../i18n/LanguageContext';
+import { useContent } from '../../i18n/content';
 import Icon from '../common/Icon';
 import Logo from '../common/Logo';
+
+// Each language is named in its own script so visitors can find theirs.
+const LANG_OPTIONS = [
+  { code: 'en', short: 'EN', label: 'English' },
+  { code: 'pa', short: 'ਪੰ', label: 'ਪੰਜਾਬੀ' },
+  { code: 'hi', short: 'हि', label: 'हिन्दी' },
+];
 
 export default function Header() {
   const [open, setOpen] = useState(false);
   const [subOpen, setSubOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { pathname } = useLocation();
+  const { t, lang, setLang } = useLang();
+  const { site, navLinks } = useContent();
 
   useEffect(() => {
     setOpen(false);
@@ -84,14 +94,31 @@ export default function Header() {
               )}
             </ul>
             <a href={site.phoneHref} className="btn btn--gold nav__cta">
-              <Icon name="phone" size={16} /> Call Dera
+              <Icon name="phone" size={16} /> {t('callDera')}
             </a>
           </nav>
+
+          <div className="lang-switch" role="group" aria-label={t('chooseLanguage')}>
+            {LANG_OPTIONS.map((o) => (
+              <button
+                key={o.code}
+                type="button"
+                lang={o.code}
+                className={`lang-switch__btn ${lang === o.code ? 'is-active' : ''}`}
+                aria-pressed={lang === o.code}
+                aria-label={o.label}
+                title={o.label}
+                onClick={() => setLang(o.code)}
+              >
+                {o.short}
+              </button>
+            ))}
+          </div>
 
           <button
             type="button"
             className="header__toggle"
-            aria-label={open ? 'Close menu' : 'Open menu'}
+            aria-label={open ? t('closeMenu') : t('openMenu')}
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
           >

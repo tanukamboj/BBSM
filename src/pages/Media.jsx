@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { site } from '../data/site';
+import { useLang } from '../i18n/LanguageContext';
 import useTitle from '../hooks/useTitle';
 import PageHero from '../components/common/PageHero';
 import SectionTitle from '../components/common/SectionTitle';
@@ -15,7 +16,8 @@ const photos = [
 ];
 
 export default function Media() {
-  useTitle('Media');
+  const { t } = useLang();
+  useTitle(t('media'));
   const [active, setActive] = useState(null);
 
   useEffect(() => {
@@ -31,11 +33,11 @@ export default function Media() {
 
   return (
     <>
-      <PageHero title="Media" subtitle="Recent Events, Photos & Videos" crumbs={[{ label: 'Media' }]} />
+      <PageHero title={t('media')} subtitle={t('mediaSubtitle')} crumbs={[{ label: t('media') }]} />
 
       <section className="section">
         <div className="container">
-          <SectionTitle eyebrow="Latest updates" title="Recent Events from Facebook" />
+          <SectionTitle eyebrow={t('latestUpdates')} title={t('recentEvents')} />
           <div className="events-layout events-layout--single">
             <div className="fb-embed card">
               <iframe title="Facebook – Dera Baba Bhuman Shah" src={fbSrc} width="100%" height="700" loading="lazy" allow="encrypted-media" />
@@ -46,10 +48,10 @@ export default function Media() {
 
       <section className="section section--cream">
         <div className="container">
-          <SectionTitle eyebrow="Gallery" title="Photos" />
+          <SectionTitle eyebrow={t('gallery')} title={t('photos')} />
           <div className="gallery">
             {photos.map((p, i) => (
-              <button type="button" className="gallery__item" key={p.src} onClick={() => setActive(i)} aria-label={`Open photo: ${p.alt}`}>
+              <button type="button" className="gallery__item" key={p.src} onClick={() => setActive(i)} aria-label={`${t('openPhoto')}: ${p.alt}`}>
                 <img src={p.src} alt={p.alt} loading="lazy" />
               </button>
             ))}
@@ -59,7 +61,7 @@ export default function Media() {
 
       <section className="section">
         <div className="container narrow">
-          <SectionTitle eyebrow="Videos" title="Please Like Share Subscribe" />
+          <SectionTitle eyebrow={t('videos')} title={t('ytTitle')} />
           <div className="video">
             <iframe
               src={`https://www.youtube-nocookie.com/embed/${site.social.featuredVideoId}`}
@@ -71,7 +73,7 @@ export default function Media() {
           </div>
           <div className="center">
             <a href={site.social.youtubeChannel} target="_blank" rel="noopener noreferrer" className="btn btn--primary">
-              <Icon name="youtube" size={18} /> Check Out All Our Latest Videos!
+              <Icon name="youtube" size={18} /> {t('ytLink')}
             </a>
           </div>
         </div>
@@ -79,7 +81,7 @@ export default function Media() {
 
       {active !== null && (
         <div className="lightbox" role="dialog" aria-modal="true" aria-label={photos[active].alt} onClick={() => setActive(null)}>
-          <button type="button" className="lightbox__close" aria-label="Close" onClick={() => setActive(null)}>
+          <button type="button" className="lightbox__close" aria-label={t('close')} onClick={() => setActive(null)}>
             <Icon name="close" size={28} />
           </button>
           <img src={photos[active].src} alt={photos[active].alt} onClick={(e) => e.stopPropagation()} />

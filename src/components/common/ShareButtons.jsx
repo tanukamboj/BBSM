@@ -1,12 +1,14 @@
 import Icon from './Icon';
+import { useLang } from '../../i18n/LanguageContext';
 
 export default function ShareButtons({ title }) {
+  const { t: tr } = useLang();
   const url = typeof window !== 'undefined' ? window.location.href : '';
   const u = encodeURIComponent(url);
   const t = encodeURIComponent(title);
   return (
     <div className="share">
-      <span className="share__label"><Icon name="share" size={16} /> Share</span>
+      <span className="share__label"><Icon name="share" size={16} /> {tr('share')}</span>
       <a href={`https://facebook.com/share.php?u=${u}&title=${t}`} target="_blank" rel="noopener noreferrer">
         <Icon name="facebook" size={16} /> Facebook
       </a>

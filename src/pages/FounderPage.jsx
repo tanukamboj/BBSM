@@ -1,5 +1,6 @@
 import { Navigate } from 'react-router-dom';
-import { getFounder } from '../data/founders';
+import { useLang } from '../i18n/LanguageContext';
+import { useContent } from '../i18n/content';
 import useTitle from '../hooks/useTitle';
 import PageHero from '../components/common/PageHero';
 import InfoPanel from '../components/common/InfoPanel';
@@ -8,7 +9,9 @@ import YoutubeBanner from '../components/common/YoutubeBanner';
 
 // One template for all three founder / guide biography pages
 export default function FounderPage({ slug }) {
-  const f = getFounder(slug);
+  const { t } = useLang();
+  const { founders } = useContent();
+  const f = founders.find((x) => x.slug === slug);
   useTitle(f?.pageTitle);
   if (!f) return <Navigate to="/" replace />;
 
@@ -17,7 +20,7 @@ export default function FounderPage({ slug }) {
       <PageHero
         title={f.pageTitle.toUpperCase()}
         subtitle={f.role.join(' ')}
-        crumbs={[{ label: 'About', to: '/about' }, { label: f.pageTitle }]}
+        crumbs={[{ label: t('about'), to: '/about' }, { label: f.pageTitle }]}
       />
 
       <section className="section">
@@ -36,8 +39,8 @@ export default function FounderPage({ slug }) {
               </div>
             </div>
 
-            <nav className="toc" aria-label="On this page">
-              <strong>On this page</strong>
+            <nav className="toc" aria-label={t('onThisPage')}>
+              <strong>{t('onThisPage')}</strong>
               <ul>
                 {f.sections.map((s, i) => (
                   <li key={s.heading}><a href={`#s-${i}`}>{s.heading.replace(/:$/, '').trim()}</a></li>

@@ -1,15 +1,18 @@
 import { Link } from 'react-router-dom';
-import { founders } from '../../data/founders';
+import { useLang } from '../../i18n/LanguageContext';
+import { useContent } from '../../i18n/content';
 import SectionTitle from './SectionTitle';
 import Icon from './Icon';
 
 // Founders & Guides – used on Home & About pages
 export default function FounderCards({ excludeSlug }) {
+  const { t } = useLang();
+  const { founders } = useContent();
   const list = founders.filter((f) => f.slug !== excludeSlug);
   return (
     <section className="section section--cream">
       <div className="container">
-        <SectionTitle eyebrow="Founders & Guides" title="ਸੰਸਥਾਪਕ ਅਤੇ ਮਾਰਗਦਰਸ਼ਕ" />
+        <SectionTitle eyebrow={t('foundersEyebrow')} title={t('foundersTitle')} />
         <div className={`founders founders--${list.length}`}>
           {list.map((f) => (
             <Link to={`/${f.slug}`} className="founder-card" key={f.slug}>
@@ -24,7 +27,7 @@ export default function FounderCards({ excludeSlug }) {
                   {f.role[1]}
                 </p>
                 <span className="link-arrow">
-                  Read life history <Icon name="arrow" size={16} />
+                  {t('readLife')} <Icon name="arrow" size={16} />
                 </span>
               </div>
             </Link>
