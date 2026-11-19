@@ -23,7 +23,22 @@ export default function Home() {
     <>
       {/* HERO */}
       <section className="hero">
-        <div className="hero__bg" style={{ backgroundImage: 'url(/images/banner-1-1.jpg)' }} aria-hidden="true" />
+        <div className="hero__bg" style={{ backgroundImage: 'url(/images/golden-temple-banner.jpg)' }} aria-hidden="true" />
+        <img
+          className="hero__guru"
+          src="/images/baba-brahm-dass-ji-cutout.png"
+          alt="Guru Maharaj Baba Brahm Dass Ji"
+          width="320"
+          height="484"
+        />
+        <a
+          className="hero__credit"
+          href="https://commons.wikimedia.org/wiki/File:Golden_Temple_Amritsar_Panorama.jpg"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Golden Temple photo: Benison P Baby, CC BY-SA 4.0
+        </a>
         <div className="container hero__inner">
           <div className="hero__content">
             <span className="badge"><Icon name="shield" size={14} /> {t('officialWebsite')}</span>
