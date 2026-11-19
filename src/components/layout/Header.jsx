@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { navLinks, site } from '../../data/site';
 import Icon from '../common/Icon';
+import Logo from '../common/Logo';
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -42,7 +43,7 @@ export default function Header() {
       <header className={`header ${scrolled ? 'header--scrolled' : ''}`}>
         <div className="container header__inner">
           <Link to="/" className="header__logo" aria-label={`${site.name} – Home`}>
-            <img src="/images/logo.png" alt={site.name} width="297" height="92" />
+            <Logo />
           </Link>
 
           <nav className={`nav ${open ? 'nav--open' : ''}`} aria-label="Main navigation">

@@ -7,7 +7,7 @@ export default function Blog() {
   useTitle('Blog');
   return (
     <>
-      <PageHero title="Blog" subtitle="Aarti, Prayer & Festivals of the Dera" crumbs={[{ label: 'Blog' }]} />
+      <PageHero title="Blog" subtitle="Gurbani, Ardaas & Gurpurabs" crumbs={[{ label: 'Blog' }]} />
       <section className="section">
         <div className="container post-grid">
           {posts.map((p) => <PostCard key={p.slug} post={p} />)}

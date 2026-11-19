@@ -8,16 +8,17 @@ import SectionTitle from '../components/common/SectionTitle';
 import Icon from '../components/common/Icon';
 
 const faqs = [
-  { q: 'Where is Mukhya Dera Baba Bhuman Shah Ji located?', a: `${site.address}. Use the map on this page for directions.` },
+  { q: 'Where is Dera Baba Bhuman Shah Ji located?', a: `${site.address}. Use the map on this page for directions.` },
   {
-    q: 'When is the monthly Satsang held?',
-    a: 'Every month a Satsang (holy discourses) is held in the Dera at 10 a.m. on every Purnima. On this day different types of Medical camps are also organized for the poor and needy.',
+    q: 'When are the special Diwans held?',
+    a: 'A special Diwan with Gurbani Kirtan and Ardaas is held every month on Sangrand and Puranmashi, followed by Guru Ka Langar.',
   },
-  { q: 'Is Langar available for visitors?', a: 'Yes. Free Food is provided to Everybody round the clock at the Langar Bhawan.' },
-  { q: 'Is there a place to stay at the Dera?', a: 'A Dharamshala is constructed for the Followers and visitors.' },
-  {
-    q: 'Which are the main festivals of the Dera?',
-    a: 'Nirwan Diwas of Baba Bhuman Shah Ji, Birth Anniversary of Baba Shri Chand Ji, Birth Anniversary of Baba Bhuman Shah Ji (14th April) and Maghi Mela.',
+  { q: 'Is Langar available for visitors?', a: 'Yes. Guru Ka Langar is free and open to everyone, regardless of faith or background.' },
+  { q: 'What should I keep in mind when visiting?', a: 'Please cover your head, remove your shoes and wash your hands before entering the Darbar Sahib. Tobacco, alcohol and intoxicants are not allowed.' },
+  { q: 'Can I book an Akhand Path, Sukhmani Sahib or Anand Karaj?', a: `Yes. Choose "Event Information" in the form above or call ${site.phone}. See the Services page for all available Sewa.` },
+    {
+    q: 'Which Gurpurabs are celebrated at the Dera?',
+    a: 'Parkash Purab of Sri Guru Nanak Dev Ji and Sri Guru Gobind Singh Ji, Vaisakhi (14th April, also the birth anniversary of Baba Bhuman Shah Ji), Janam Divas of Baba Sri Chand Ji, Bandi Chhor Divas, Maghi and the Barsi of Baba Bhuman Shah Ji.',
   },
   { q: 'How can I make a donation or ask about events?', a: `Choose "Donation" or "Event Information" in the form above, or call ${site.phone}.` },
 ];
@@ -31,7 +32,7 @@ export default function Contact() {
       <section className="section">
         <div className="container layout-sidebar">
           <div>
-            <h2 className="hi contact-address">{site.address}</h2>
+            <h2 className="contact-address">{site.address}</h2>
             <p className="muted">Or you can simply fill the form below; Usually we respond in few hours.</p>
             <ContactForm />
           </div>

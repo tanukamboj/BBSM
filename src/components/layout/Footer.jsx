@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { site } from '../../data/site';
 import Icon from '../common/Icon';
+import Logo from '../common/Logo';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -9,7 +10,7 @@ export default function Footer() {
       <div className="footer__ornament" aria-hidden="true" />
       <div className="container footer__grid">
         <div className="footer__col footer__brand">
-          <img src="/images/logo-bottom.png" alt={site.name} width="220" height="68" loading="lazy" />
+          <Logo className="logo--footer" />
           <p>{site.tagline}</p>
           <div className="social">
             <a href={site.social.twitter} target="_blank" rel="noopener noreferrer" aria-label="Twitter">
@@ -28,6 +29,7 @@ export default function Footer() {
           <h4>Useful links</h4>
           <ul className="footer__links">
             <li><Link to="/about">About Us</Link></li>
+            <li><Link to="/services">Services & Sewa</Link></li>
             <li><Link to="/about/baba-bhuman-shah-charitable-trust-sangar-sadhan">About Trust</Link></li>
             <li><Link to="/about/teachings-of-baba-bhuman-shah-ji">Teachings of Guru</Link></li>
             <li><Link to="/gallery">Gallery</Link></li>
@@ -39,7 +41,7 @@ export default function Footer() {
         <div className="footer__col">
           <h4>Locate Us</h4>
           <ul className="footer__contact">
-            <li><Icon name="pin" size={16} /> <span>Village Baba Bhuman Shah, Sirsa – 125055</span></li>
+            <li><Icon name="pin" size={16} /> <span>{site.addressShort}</span></li>
             <li><Icon name="phone" size={16} /> <a href={site.phoneHref}>{site.phone}</a></li>
             <li><Icon name="mail" size={16} /> <a href={`mailto:${site.email}`}>{site.email}</a></li>
             <li><Icon name="phone" size={16} /> <a href={site.landlineHref}>{site.landline}</a></li>
@@ -64,8 +66,8 @@ export default function Footer() {
 
       <div className="footer__bottom">
         <div className="container footer__bottom-inner">
-          <span>Copyright © {year} Dera Baba Bhuman Shah Ji, Sangar Sadha (Sirsa)</span>
-          <span>जय बाबा भूमण शाह जी 🙏</span>
+          <span>Copyright © {year} Dera Baba Bhuman Shah Ji, Schofields NSW</span>
+          <span>ਵਾਹਿਗੁਰੂ ਜੀ ਕਾ ਖ਼ਾਲਸਾ, ਵਾਹਿਗੁਰੂ ਜੀ ਕੀ ਫ਼ਤਹਿ 🙏</span>
         </div>
       </div>
     </footer>

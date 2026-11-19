@@ -1,54 +1,50 @@
 export const teachings = [
   {
-    title: 'Advaita Vedanta',
-    text: 'The Dera believes in Ekmev, Advitya (Unique), Omni present, Omnicient, Omnipotent God who is Nirgun as well as Sagun.',
+    title: 'Ik Onkar – One Creator',
+    text: 'The Dera believes in Ik Onkar — One, Omnipresent, Omniscient and Omnipotent Creator, Nirankar (without form), who creates, sustains and pervades the whole universe, as revealed in the Mool Mantar of Sri Guru Nanak Dev Ji.',
   },
   {
-    title: 'Nirgun Sagun Parmatma',
-    text: 'The Dera believes in Nirgun-Nirakar, Sagun-Sakar God ( One who has forms and attributes, without formed attribute, without form and with form) Who creates the universe, sustains in the middle and absorbs the world in itself. He is Eternal.',
+    title: 'Naam Japna',
+    text: 'Waheguru is realised through continuous remembrance of Naam. Every morning and evening Nitnem, Gurbani Kirtan and Ardaas are performed in the Dera, and the Sangat is inspired to do Naam Simran in daily life.',
   },
   {
-    title: 'Continuous Remembrance of God',
-    text: 'The Dera considers that God can be easily realised by continous remembrance of God. In the Dera, every morning and evening Gurubani is recited and Aarti and Prayer to God and Baba Bhuman Shah is done.',
+    title: 'Kirat Karni',
+    text: 'Earn an honest living by one’s own hard work, without cheating or exploiting anyone, and live the life of a householder while keeping the mind attached to Waheguru.',
   },
   {
-    title: 'Satsang',
-    text: 'By attending the Satsangs interest increases in remembering God. Gradually the human mind forgoes the attachment of world and enjoy the Love of God .',
+    title: 'Vand Chakna',
+    text: 'Share what you have with others, especially the poor and needy. Guru Ka Langar, where everyone sits together in Pangat and eats the same food, is the living example of this teaching.',
   },
   {
-    title: 'Serve the Poor',
-    text: 'The Dera gives the entire importance to serving the poor, needy and sick because service done unselfishly diverts into Devotion.',
+    title: 'Sangat',
+    text: 'By joining the Sangat and listening to Gurbani Kirtan and Katha, love for Naam grows. Gradually the mind gives up attachment to Maya and enjoys the love of Waheguru.',
   },
   {
-    title: 'Reject Discrimination',
-    text: 'The Dera does not accept any kind of discrimination as casteism, richness and poverty, upper and lower classes in human beings.',
+    title: 'Sewa',
+    text: 'The Dera gives the highest importance to selfless Sewa of the poor, needy and sick, because Sewa done without ego becomes Bhakti.',
   },
   {
-    title: 'Avoid Violence',
-    text: 'The Dera considers all kinds of violence evil and strictly instructs the Followers to avoid from all kinds of violence.',
+    title: 'Equality of All',
+    text: 'As Gurbani teaches, “Manas Ki Jaat Sabhai Ek Pehchanbo” — all humanity is one. The Dera does not accept any discrimination of caste, creed, gender, wealth or status.',
   },
   {
     title: 'Say No to Intoxication',
-    text: 'The Dera does not allow any kind of Intoxication and Drugs because Intoxication makes man weak Economically, Physically, Mentally,Morally and Socially .',
+    text: 'The Dera does not allow any kind of tobacco, alcohol or drugs, because intoxication makes a person weak economically, physically, mentally, morally and socially.',
   },
   {
-    title: 'Sanyas staying within Maya',
-    text: 'Asceticism (Sanyas) from the wordly thing is by mind (mann) and not by body.The Dera preaches the followers that they should remain away from Materialism.',
+    title: 'Respect for Women',
+    text: '“So Kiyo Manda Aakhiye, Jit Jamme Rajaan” — Gurbani gives women equal honour. The Dera considers female foeticide a grave sin and inspires the Sangat to end this evil.',
   },
   {
-    title: 'Female-foeticide is Sin',
-    text: 'The Dera considers the female- foeticide as an abominable crime and inspires the followers to curb this menace.',
+    title: 'Guru’s Grace',
+    text: 'Waheguru is realised only through the Guru’s guidance and grace. The Sangat bows before Sri Guru Granth Sahib Ji, the eternal Guru, and follows the path shown by the Gurus and Gursikhs.',
   },
   {
-    title: 'Essence of Guru',
-    text: 'God can be only realized under the Guidance and Grace of Guru. The Dera gives utmost importance to the Guru and Saints who have realized God.',
-  },
-  {
-    title: 'Think Positive',
-    text: 'Always think positive. One who always keeps tracking on the true path will lead to progress and prosperity.',
+    title: 'Chardi Kala',
+    text: 'Always remain in Chardi Kala — rising spirits and positive outlook — accepting Waheguru’s Hukam (will) with patience and gratitude.',
   },
   {
     title: 'Others',
-    text: 'The Dera strictly prohibits Dowry- system. Serving the parents is called the Sacred act. Anger diverts into Peace by regular remembrance of God.',
+    text: 'The Dera strictly prohibits the dowry system. Serving one’s parents is a sacred duty. Anger, ego and greed are overcome by regular Naam Simran.',
   },
 ];

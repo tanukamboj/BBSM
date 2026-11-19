@@ -34,15 +34,15 @@ export default function InfoPanel({ showQuickInfo = true }) {
           <li>
             <Icon name="calendar" />
             <div>
-              <span className="info-list__label">Monthly Satsang</span>
-              <span>Every Purnima at 10 a.m. (with free medical camp)</span>
+              <span className="info-list__label">Monthly Diwan</span>
+              <span>Sangrand &amp; Puranmashi – Kirtan, Ardaas &amp; Langar</span>
             </div>
           </li>
           <li>
             <Icon name="langar" />
             <div>
               <span className="info-list__label">Langar</span>
-              <span>Free food for everybody, round the clock</span>
+              <span>Guru Ka Langar – free and open to all</span>
             </div>
           </li>
         </ul>

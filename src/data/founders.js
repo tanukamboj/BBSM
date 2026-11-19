@@ -1,8 +1,8 @@
-// संस्थापक व मार्गदर्शक — Founders & Guides
+// Founders & Guides
 export const founders = [
   {
     slug: 'bhagwan-sri-chand-ji-maharaj-founder-of-udasin-sect-in-sikhism',
-    name: 'Bhagwan Sri Chand Ji',
+    name: 'Baba Sri Chand Ji',
     pageTitle: 'Baba Sri Chand Ji',
     role: ['Founder,', 'Udasin Sect of Sikhism'],
     image: '/images/SriChandraBhagwan.jpg',

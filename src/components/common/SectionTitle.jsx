@@ -3,7 +3,7 @@ export default function SectionTitle({ eyebrow, title, text, align = 'center', l
     <div className={`section-title section-title--${align} ${light ? 'section-title--light' : ''}`}>
       {eyebrow && (
         <span className="section-title__eyebrow">
-          <img src="/images/om-icon.png" alt="" width="22" height="22" /> {eyebrow}
+          <img src="/images/khanda-icon.svg" alt="" width="22" height="22" /> {eyebrow}
         </span>
       )}
       <h2>{title}</h2>

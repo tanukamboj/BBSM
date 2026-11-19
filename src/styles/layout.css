@@ -412,3 +412,60 @@
   background: var(--maroon-700);
   color: #fff;
 }
+
+/* Logo (Khanda badge + name) */
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  line-height: 1.1;
+}
+.logo__badge {
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  flex: none;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--gold), var(--saffron));
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+.header__logo .logo__badge img,
+.logo__badge img {
+  width: 38px;
+  height: 38px;
+}
+.logo__text {
+  display: flex;
+  flex-direction: column;
+}
+.logo__pa {
+  font-family: 'Noto Sans Gurmukhi', var(--font-hi), sans-serif;
+  font-weight: 700;
+  font-size: 1.55rem;
+  color: #fff;
+}
+.logo__en {
+  font-family: var(--font-head);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  color: var(--gold);
+}
+@media (max-width: 980px) {
+  .logo__badge {
+    width: 46px;
+    height: 46px;
+  }
+  .logo__badge img,
+  .header__logo .logo__badge img {
+    width: 30px;
+    height: 30px;
+  }
+  .logo__pa {
+    font-size: 1.2rem;
+  }
+  .logo__en {
+    font-size: 0.72rem;
+  }
+}

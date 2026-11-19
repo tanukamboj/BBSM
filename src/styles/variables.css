@@ -16,9 +16,9 @@
   --line: #eadfce;
   --success: #2f7d4f;
 
-  --font-body: 'Inter', 'Noto Sans Devanagari', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --font-head: 'Playfair Display', 'Noto Serif Devanagari', Georgia, serif;
-  --font-hi: 'Noto Serif Devanagari', 'Playfair Display', serif;
+  --font-body: 'Inter', 'Noto Sans Gurmukhi', 'Noto Sans Devanagari', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-head: 'Playfair Display', 'Noto Sans Gurmukhi', 'Noto Serif Devanagari', Georgia, serif;
+  --font-hi: 'Noto Serif Devanagari', 'Noto Sans Gurmukhi', 'Playfair Display', serif;
 
   --radius-sm: 8px;
   --radius: 14px;

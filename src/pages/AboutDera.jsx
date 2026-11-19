@@ -10,12 +10,12 @@ export default function AboutDera() {
   useTitle('About');
   return (
     <>
-      <PageHero title="About" subtitle="Dera Baba Bhuman Shah Ji, Sangar Sarista (Sirsa)" crumbs={[{ label: 'About' }]} />
+      <PageHero title="About" subtitle="Dera Baba Bhuman Shah Ji – in the tradition of Sri Guru Nanak Dev Ji" crumbs={[{ label: 'About' }]} />
 
       <section className="section">
         <div className="container layout-sidebar">
           <div className="prose">
-            <span className="eyebrow"><img src="/images/om-icon-b.png" alt="" width="22" height="22" /> Welcome</span>
+            <span className="eyebrow"><img src="/images/khanda-icon-b.svg" alt="" width="22" height="22" /> Welcome</span>
             <h2>About Dera Baba Bhuman Shah</h2>
             {aboutParagraphs.map((p, i) => <p key={i}>{p}</p>)}
 
@@ -27,7 +27,7 @@ export default function AboutDera() {
               </div>
             </blockquote>
 
-            <span className="eyebrow"><img src="/images/om-icon-b.png" alt="" width="22" height="22" /> Since 1947</span>
+            <span className="eyebrow"><img src="/images/khanda-icon-b.svg" alt="" width="22" height="22" /> Since 1947</span>
             <h2>History of Dera Baba Bhuman Shah Ji</h2>
             {historyParagraphs.slice(0, 3).map((p, i) => <p key={i}>{p}</p>)}
             <figure className="figure">
@@ -63,7 +63,7 @@ export default function AboutDera() {
       {/* SOCIAL SERVICES */}
       <section className="section section--cream">
         <div className="container">
-          <SectionTitle eyebrow="Seva" title="Social Services of The Dera" />
+          <SectionTitle eyebrow="Sewa" title="Sewa of the Dera" />
           <div className="feature-grid">
             {socialServices.map((s) => (
               <div className="feature" key={s.title}>

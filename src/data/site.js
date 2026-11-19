@@ -1,21 +1,21 @@
 // Central site information — edit here and it updates everywhere.
 export const site = {
   name: 'Dera Baba Bhuman Shah Ji',
-  nameHi: 'मुख्य डेरा बाबा भूमण शाह जी',
-  placeHi: 'संगर साधां, सिरसा (हरियाणा)',
-  place: 'Sangar Sarista (Sirsa), Haryana',
+  nameHi: 'ਡੇਰਾ ਬਾਬਾ ਭੂਮਣ ਸ਼ਾਹ ਜੀ',
+  placeHi: 'ਵਾਹਿਗੁਰੂ ਜੀ ਕਾ ਖ਼ਾਲਸਾ, ਵਾਹਿਗੁਰੂ ਜੀ ਕੀ ਫ਼ਤਹਿ',
+  place: 'Schofields, Sydney NSW',
   tagline:
-    'Dera Baba Bhuman Shah Ji, Sangar Sarista (Sirsa) Haryana feels contemporary necessity of Peace, Unity and Prosperity in the world.',
+    'Dera Baba Bhuman Shah Ji — a place of Gurbani, Naam Simran, Sewa and Guru Ka Langar, open to all.',
   intro:
-    'Dera Baba Bhuman Shah Ji, Sangar Sarista (Sirsa) Haryana feels contemporary necessity of Peace, Unity and Prosperity in the world because at present violence, hatred and casteism have empowered the world.',
-  address: 'मुख्य डेरा बाबा भूमणशाह जी, Vill. Baba Bhuman Shah, Sirsa – 125055',
-  addressShort: 'Village Baba Bhuman Shah, Sirsa, Haryana – 125055',
+    'Following the path of Sri Guru Nanak Dev Ji — Naam Japna, Kirat Karni and Vand Chakna — the Dera welcomes everyone to join the Sangat for Gurbani Kirtan, Ardaas and Guru Ka Langar, open to all without any discrimination.',
+  address: 'Unit 436/79 Grima Street, Schofields NSW 2762',
+  addressShort: 'Unit 436/79 Grima Street, Schofields NSW 2762',
   phone: '+91 93542 01008',
   phoneHref: 'tel:+919354201008',
   landline: '0166 625 1204',
   landlineHref: 'tel:01666251204',
   email: 'bhumanshah@gmail.com',
-  mapQuery: 'Dera Baba Bhuman Shah Ji, Sangar Sarista, Sirsa, Haryana 125055',
+  mapQuery: '79 Grima Street, Schofields NSW 2762, Australia',
   established: '29-05-1970',
   trustRegistration: 'Registered under Income-Tax Act 1961, Regn. No. 7-B dated 30-9-75',
   social: {
@@ -28,9 +28,9 @@ export const site = {
   },
   // Next event shown in the countdown on the home page
   nextEvent: {
-    title: 'महापरिनिर्वाण दिवस',
-    date: '2026-12-26T00:00:00+05:30',
-    label: '26.12.2026',
+    title: 'ਸ੍ਰੀ ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ ਪ੍ਰਕਾਸ਼ ਪੁਰਬ',
+    date: '2026-11-24T00:00:00+11:00',
+    label: '24.11.2026',
   },
 };
 
@@ -44,6 +44,7 @@ export const navLinks = [
       { label: 'Teachings of Guru', to: '/about/teachings-of-baba-bhuman-shah-ji' },
     ],
   },
+  { label: 'Services', to: '/services' },
   { label: 'Media', to: '/gallery' },
   { label: 'Blog', to: '/blog' },
   { label: 'Contact', to: '/contact' },

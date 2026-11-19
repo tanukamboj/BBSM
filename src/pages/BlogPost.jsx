@@ -27,12 +27,12 @@ export default function BlogPost({ slug }) {
               <span className="tag">{post.category}</span>
             </div>
             {post.heading && <h2 className="post__heading">{post.heading}</h2>}
+            {post.paragraphs?.map((p, i) => <p key={i}>{p}</p>)}
             {post.lines && (
               <div className="verse">
                 {post.lines.map((l, i) => <p key={i}>{l}</p>)}
               </div>
             )}
-            {post.paragraphs?.map((p, i) => <p key={i}>{p}</p>)}
             {post.list && (
               <ol className="post__list">
                 {post.list.map((l) => <li key={l}>{l}</li>)}

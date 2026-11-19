@@ -15,7 +15,7 @@ export default function Teachings() {
             <img src="/images/Baba-Bhuman-Shah-Ji-Udasin-PNG.png" alt="Baba Bhuman Shah Ji" width="358" height="1000" />
           </div>
           <div>
-            <span className="eyebrow"><img src="/images/om-icon-b.png" alt="" width="22" height="22" /> Shiksha</span>
+            <span className="eyebrow"><img src="/images/khanda-icon-b.svg" alt="" width="22" height="22" /> Gurmat Sikhya</span>
             <h2 className="teachings__title">Teachings of Baba Bhuman Shah Ji</h2>
             <div className="teaching-list">
               {teachings.map((t, i) => (

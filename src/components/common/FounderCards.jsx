@@ -3,13 +3,13 @@ import { founders } from '../../data/founders';
 import SectionTitle from './SectionTitle';
 import Icon from './Icon';
 
-// संस्थापक व मार्गदर्शक – used on Home & About pages
+// Founders & Guides – used on Home & About pages
 export default function FounderCards({ excludeSlug }) {
   const list = founders.filter((f) => f.slug !== excludeSlug);
   return (
     <section className="section section--cream">
       <div className="container">
-        <SectionTitle eyebrow="Founders & Guides" title="संस्थापक व मार्गदर्शक" />
+        <SectionTitle eyebrow="Founders & Guides" title="ਸੰਸਥਾਪਕ ਅਤੇ ਮਾਰਗਦਰਸ਼ਕ" />
         <div className={`founders founders--${list.length}`}>
           {list.map((f) => (
             <Link to={`/${f.slug}`} className="founder-card" key={f.slug}>

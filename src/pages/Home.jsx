@@ -9,12 +9,13 @@ import Countdown from '../components/common/Countdown';
 import FounderCards from '../components/common/FounderCards';
 import YoutubeBanner from '../components/common/YoutubeBanner';
 import PostCard from '../components/common/PostCard';
+import { services } from '../data/services';
 
 const stats = [
-  { value: '1702', label: 'Dera tradition since' },
-  { value: '12', label: 'Successor Mahants' },
-  { value: '24×7', label: 'Free Langar' },
-  { value: '1970', label: 'Charitable Trust est.' },
+  { value: 'ੴ', label: 'Ik Onkar – One Creator' },
+  { value: 'Daily', label: 'Nitnem & Kirtan' },
+  { value: '24×7', label: 'Guru Ka Langar' },
+  { value: '1702', label: 'Sewa tradition since' },
 ];
 
 export default function Home() {
@@ -56,7 +57,7 @@ export default function Home() {
       <section className="section">
         <div className="container intro-grid">
           <div className="intro-grid__main card card--feature">
-            <img src="/images/om-icon-b.png" alt="" width="42" height="42" className="card__om" />
+            <img src="/images/khanda-icon-b.svg" alt="" width="42" height="42" className="card__om" />
             <h2>Baba Bhuman Shah Charitable Trust</h2>
             <p>{trustHomeSummary}</p>
             <Link to="/about/baba-bhuman-shah-charitable-trust-sangar-sadhan" className="btn btn--primary">
@@ -91,7 +92,26 @@ export default function Home() {
             <p className="event__date"><Icon name="calendar" size={18} /> {site.nextEvent.label}</p>
           </div>
           <Countdown target={site.nextEvent.date} />
-          <Link to="/gallery" className="btn btn--gold">All Events</Link>
+          <Link to="/gurpurabs-and-festivals" className="btn btn--gold">All Gurpurabs</Link>
+        </div>
+      </section>
+
+      {/* SERVICES */}
+      <section className="section">
+        <div className="container">
+          <SectionTitle eyebrow="Sewa" title="Services at the Dera" text="Ardaas, Path, Kirtan, Anand Karaj and Guru Ka Langar — prayer and Sewa requests are free." />
+          <div className="feature-grid">
+            {services.slice(0, 6).map((s) => (
+              <div className="feature" key={s.title}>
+                <span className="feature__icon"><Icon name={s.icon} size={26} /></span>
+                <h3>{s.title}</h3>
+                <p>{s.text}</p>
+              </div>
+            ))}
+          </div>
+          <div className="center">
+            <Link to="/services" className="btn btn--primary">All Services <Icon name="arrow" size={16} /></Link>
+          </div>
         </div>
       </section>
 
@@ -100,7 +120,7 @@ export default function Home() {
       {/* LATEST FROM BLOG */}
       <section className="section">
         <div className="container">
-          <SectionTitle eyebrow="Aarti · Prayer · Festivals" title="From the Blog" />
+          <SectionTitle eyebrow="Gurbani · Ardaas · Gurpurab" title="From the Blog" />
           <div className="post-grid">
             {posts.map((p) => <PostCard key={p.slug} post={p} />)}
           </div>
