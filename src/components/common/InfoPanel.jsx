@@ -20,14 +20,6 @@ export default function InfoPanel({ showQuickInfo = true }) {
             </div>
           </li>
           <li>
-            <Icon name="phone" />
-            <div>
-              <span className="info-list__label">{t('phone')}</span>
-              <a href={site.phoneHref}>{site.phone}</a>
-              <a href={site.landlineHref}>{site.landline}</a>
-            </div>
-          </li>
-          <li>
             <Icon name="mail" />
             <div>
               <span className="info-list__label">{t('email')}</span>
@@ -50,8 +42,8 @@ export default function InfoPanel({ showQuickInfo = true }) {
           </li>
         </ul>
         <div className="card__actions">
-          <a href={site.phoneHref} className="btn btn--primary btn--block">
-            <Icon name="phone" size={16} /> {t('callNow')}
+          <a href={`mailto:${site.email}`} className="btn btn--primary btn--block">
+            <Icon name="mail" size={16} /> {t('emailNow')}
           </a>
           <Link to="/contact" className="btn btn--outline btn--block">
             {t('sendMessage')}

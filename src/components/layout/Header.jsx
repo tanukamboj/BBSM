@@ -40,10 +40,7 @@ export default function Header() {
             <Icon name="pin" size={14} /> {site.addressShort}
           </span>
           <div className="topbar__right">
-            <a className="topbar__item" href={site.phoneHref}>
-              <Icon name="phone" size={14} /> {site.phone}
-            </a>
-            <a className="topbar__item topbar__hide-sm" href={`mailto:${site.email}`}>
+            <a className="topbar__item" href={`mailto:${site.email}`}>
               <Icon name="mail" size={14} /> {site.email}
             </a>
           </div>
@@ -93,8 +90,8 @@ export default function Header() {
                 )
               )}
             </ul>
-            <a href={site.phoneHref} className="btn btn--gold nav__cta">
-              <Icon name="phone" size={16} /> {t('callDera')}
+            <a href={`mailto:${site.email}`} className="btn btn--gold nav__cta">
+              <Icon name="mail" size={16} /> {t('emailDera')}
             </a>
           </nav>
 

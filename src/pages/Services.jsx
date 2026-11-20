@@ -62,7 +62,7 @@ export default function Services() {
             ))}
           </ul>
           <div className="center">
-            <a href={site.phoneHref} className="btn btn--gold"><Icon name="phone" size={16} /> {t('callPhone', { phone: site.phone })}</a>
+            <a href={`mailto:${site.email}`} className="btn btn--gold"><Icon name="mail" size={16} /> {t('emailAddr', { email: site.email })}</a>
           </div>
         </div>
       </section>

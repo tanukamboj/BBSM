@@ -15,7 +15,7 @@ src/
   main.jsx                entry, router + global styles
   App.jsx                 all routes (same URLs as the old site)
   data/                   ALL CONTENT lives here — edit text without touching UI
-    site.js               name, phone, email, address, social links, next event, nav menu
+    site.js               name, email, address, social links, next event, nav menu
     about.js              About Dera, history, 12 successors, social services
     trust.js              Charitable Trust intro + objectives
     teachings.js          Teachings of Baba Bhuman Shah Ji

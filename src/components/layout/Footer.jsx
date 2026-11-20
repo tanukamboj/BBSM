@@ -45,9 +45,7 @@ export default function Footer() {
           <h4>{t('locateUs')}</h4>
           <ul className="footer__contact">
             <li><Icon name="pin" size={16} /> <span>{site.addressShort}</span></li>
-            <li><Icon name="phone" size={16} /> <a href={site.phoneHref}>{site.phone}</a></li>
             <li><Icon name="mail" size={16} /> <a href={`mailto:${site.email}`}>{site.email}</a></li>
-            <li><Icon name="phone" size={16} /> <a href={site.landlineHref}>{site.landline}</a></li>
           </ul>
         </div>
 
